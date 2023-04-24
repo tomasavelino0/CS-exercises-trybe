@@ -22,12 +22,12 @@ def get_content_html(url):
 # paragrafos = content2.find("div", {"class": "entry-content"}).find_all("p")
 # print(paragrafos)
 
-# content3 = get_content_html("https://pt.wikipedia.org/wiki/Rock_in_Rio%22")
+content3 = get_content_html("https://pt.wikipedia.org/wiki/Rock_in_Rio%22")
 
-# all_href = [
-#     anchor["href"]
-#     for anchor in content3.find_all("a")
-#     if anchor.get("href") is not None
-# ]
+all_href = [
+    anchor["href"]
+    for anchor in content3.find_all("a")
+    if anchor.get("href") is not None
+]
 
-# print(all_href)
+print(all_href)
